@@ -14,7 +14,7 @@ class CustomerTest {
 
     @BeforeEach
     void setUp(){
-        customer = new Customer("Harman","Kaur","39 Sandway drive",
+        customer = new Customer("Harman","Kaur","39 SandWay drive",
                 "Female", LocalDate.of(2001,12,14),12345);
     }
 
@@ -30,10 +30,10 @@ class CustomerTest {
 
     @Test
     void addOrder() {
-        customer.addOrders("cake");
+        customer.addOrders("Food 100H");
         ArrayList<String> expResult =  new ArrayList<>();
-        expResult.add("cake");
-        assertEquals(expResult, customer.getOrders());
+        expResult.add("Food 100H");
+       assertEquals(expResult,customer.getOrders());
     }
 
     @Test

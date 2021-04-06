@@ -28,9 +28,11 @@ public class Customer extends Person{
     }
 
     public void addOrders(String items) {
-        if(items.matches("cake"))
+        if (items.matches("Food[0-9][H]"))
             orders.add(items);
-        else 
+        else
             throw new IllegalArgumentException("Not contains the items");
+
+
     }
 }
